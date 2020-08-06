@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Browse{% endblock title %}
+ 
+{% block body %}
+ 
+    <div class="container my-3">
+<h1 class="my-4 text-center">Hello ,{{request.user}}</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+        <img src="/static/4.jpg" class="d-block w-100" alt="...">
+            
+            <div class="card-body">
+             
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                 <button type="button" class="d-flex justify-content-center links"><a href="{% url 'form' %}" >Add a Reciepe</a>
+					</button>
+                  
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+{% endblock body %}
